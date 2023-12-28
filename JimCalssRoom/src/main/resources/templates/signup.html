@@ -1,0 +1,74 @@
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <script th:src="@{/theme/js/jquery-3.7.1.min.js}"></script>
+    <script th:src="@{/theme/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/theme/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/theme/css/MainTheme.css}">
+    <link rel="stylesheet" th:href="@{/fonts/Vazir.ttf}">
+    <title>[[${title}]]</title>
+</head>
+<body class="page">
+
+
+<main>
+    <div class="block">
+        <h1 style="font-family: Vazir">ثبت نام</h1>
+
+        <form th:action="@{/signup}" th:object="${student}" method="post">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="نام کاربری" th:field="*{username}">
+                </div>
+            </div>
+
+            <hr class="hr-xs">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="نام" th:field="*{name}">
+                </div>
+            </div>
+
+            <hr class="hr-xs">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="نام خانوادگی" th:field="*{lastName}">
+                </div>
+            </div>
+
+            <hr class="hr-xs">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="اطلاعات" th:field="*{information}">
+                </div>
+            </div>
+
+            <hr class="hr-xs">
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="password" class="form-control" placeholder="واژه عبور" th:field="*{password}">
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">ثبت نام</button>
+
+
+        </form>
+    </div>
+
+    <div class="links">
+        <p class="text-center">قبلا ثبت نام کرده اید؟ <a class="txt-brand" href="/login">وارد شوید</a></p>
+    </div>
+
+    <div th:if="${toast != null}">
+        <div th:insert="~{fragments/webToast :: toast}"></div>
+    </div>
+
+
+</main>
+</body>
+</html>

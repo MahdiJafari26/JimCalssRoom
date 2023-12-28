@@ -1,0 +1,23 @@
+<div th:fragment="toast" class="toast" style="position: absolute; top: 5px; right: 5px;" role="alert"
+     aria-live="assertive" aria-atomic="true" data-delay="5000">
+    <div th:if="${toast.toastType == 1}" class="toast-body alert-success">
+        <p>[[${toast.title}]]</p>
+    </div>
+    <div th:if="${toast.toastType == 2}" class="toast-body alert-info">
+        <p>[[${toast.title}]]</p>
+    </div>
+    <div th:if="${toast.toastType == 3}" class="toast-body alert-warning">
+        <p>[[${toast.title}]]</p>
+    </div>
+    <div th:if="${toast.toastType == 4}" class="toast-body alert-danger">
+        <p>[[${toast.title}]]</p>
+    </div>
+
+    <script>
+        $(function () {
+            setTimeout(function () {
+                new bootstrap.Toast(document.querySelector('.toast')).show();
+            }, 100);
+        });
+    </script>
+</div>

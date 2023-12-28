@@ -1,0 +1,156 @@
+.page {
+    background-color: #01103e
+}
+
+.page main {
+    width: 100%;
+    max-width: 460px;
+    margin: 8% auto 5%
+}
+
+.block {
+    background-color: #fff;
+    padding: 60px;
+    -webkit-box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .1);
+    text-align: center;
+    border-radius: 5px
+}
+
+.block h1, .block h6 {
+    font-family: Vazir;
+    color: #96a2b2;
+    letter-spacing: 1px
+}
+
+.block h1 {
+    font-size: 22px;
+    margin-bottom: 60px;
+    margin-top: 40px
+}
+
+.block h6 {
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 0
+}
+
+.block .form-group {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.block .form-control, .block .form-control:focus, .block .input-group-addon, .block .input-group-addon:focus {
+    background-color: transparent;
+    border: none;
+}
+
+.block .form-control {
+    font-size: 17px;
+    border-radius: 0px;
+}
+
+.block input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #818a91;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.block .input-group-addon {
+    color: #29aafe;
+    font-size: 19px;
+    opacity: .5
+}
+
+.block .btn-block {
+    margin-top: 30px;
+    padding: 15px;
+    background: #29aafe;
+    border-color: #29aafe;
+}
+
+.block .hr-xs {
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.footer {
+    margin-top: 60px;
+    opacity: .5;
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out
+}
+
+.footer:hover {
+    opacity: 1
+}
+
+.links {
+    padding: 15px 5px 0;
+    font-size: 13px;
+    color: #96a2b2
+}
+
+.links:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.links a {
+    color: #96a2b2;
+    opacity: .9
+}
+
+.links a:hover {
+    color: #29aafe;
+    opacity: 1
+}
+
+@media (max-width: 767px) {
+    .page main {
+        position: static;
+        top: auto;
+        left: auto;
+        -webkit-transform: none;
+        -o-transform: none;
+        transform: none;
+        padding: 30px 15px
+    }
+
+    .block {
+        padding: 20px
+    }
+}
+
+html * {
+    font-family: Vazir;
+}
+
+@font-face {
+    font-family: "Vazir";
+    font-weight: normal;
+}
+
+p {
+    text-align: right;
+    line-height: 25px;
+}
+
+.user-info {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-info img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
