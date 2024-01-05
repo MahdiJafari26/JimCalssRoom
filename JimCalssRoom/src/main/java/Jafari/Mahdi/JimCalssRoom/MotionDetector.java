@@ -108,7 +108,7 @@ sendStatus();
 
     private void sendStatus()
     {
-        final String uri = "http://localhost:8080/class/";
+        final String uri = "http://localhost:8080/class/" + cameraNumber;
 
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(uri, String.class);
