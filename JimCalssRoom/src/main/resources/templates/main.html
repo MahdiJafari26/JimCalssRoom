@@ -1,0 +1,85 @@
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <script th:src="@{/theme/js/jquery-3.7.1.min.js}"></script>
+    <script th:src="@{/theme/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/theme/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/theme/css/MainTheme.css}">
+    <link rel="stylesheet" th:href="@{/fonts/Vazir.ttf}">
+    <title>[[${title}]]</title>
+</head>
+
+<body class="page">
+
+
+<main>
+    <div class="block">
+        <h1 style="font-family: Vazir">سیستم کلاس</h1>
+
+        <hr class="hr-xs">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="شماره کلاس (پیشفرض = 0)" id="classNumberInput">
+            </div>
+        </div>
+        <hr class="hr-xs">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="checkbox" id="saveCheckbox">
+                <label style="margin-right: 5px; margin-bottom: 0rem;" for="saveCheckbox">ذخیره تحرکات کلاس</label>
+            </div>
+        </div>
+
+
+        <button class="btn btn-primary" id="startButton" style="width: 100%">شروع نظارت</button>
+
+
+    </div>
+
+
+    <div th:if="${toast != null}">
+        <div th:insert="~{fragments/webToast :: toast}"></div>
+    </div>
+
+
+</main>
+</body>
+<script>
+    let isDetecting = false;
+    $('#startButton').click(function () {
+        let classNumber = $("#classNumberInput").val();
+        if (isNaN(classNumber) || classNumber == undefined || classNumber == '') {
+            classNumber = 0;
+        }
+        if (isDetecting) {
+            isDetecting = false;
+            $("#startButton").text("شروع نظارت");
+            $("#startButton").removeClass("btn-danger");
+            $("#startButton").addClass("btn-primary");
+
+        } else {
+            isDetecting = true;
+            $("#startButton").text("توقف نظارت");
+            $("#startButton").removeClass("btn-primary");
+            $("#startButton").addClass("btn-danger");
+
+        }
+
+        $.ajax({
+            type: "post",
+            url: "manageDetection/" + classNumber + "/" + $("#saveCheckbox").is(":checked") + "/" + isDetecting,
+            datatype: "html",
+            success: function (data) {
+                if (data) {
+                    console.log("true");
+                } else {
+                    console.log("false");
+                }
+            }
+        });
+
+
+    });
+
+</script>
+</html>
