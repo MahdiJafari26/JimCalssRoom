@@ -15,12 +15,12 @@ public class MotionDetector {
 
     public static boolean continueDetection = false;
     public static boolean saveImages = false;
-    public static int cameraNumber = 0;
+    public static int classNumber = 0;
     VideoCapture camera = new VideoCapture();
 
 
     public MotionDetector() {
-        camera.open(cameraNumber);
+        camera.open(0);
         while (continueDetection)
             startDetecting();
         camera.release();
@@ -108,7 +108,7 @@ sendStatus();
 
     private void sendStatus()
     {
-        final String uri = "http://localhost:8080/class/" + cameraNumber;
+        final String uri = "http://localhost:8080/class/" + classNumber;
 
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(uri, String.class);

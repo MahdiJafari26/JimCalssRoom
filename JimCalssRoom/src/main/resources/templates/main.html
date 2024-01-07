@@ -19,7 +19,7 @@
         <hr class="hr-xs">
         <div class="form-group">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="شماره کلاس (پیشفرض = 0)" id="classNumberInput">
+                <input type="text" class="form-control" placeholder="شماره کلاس (پیشفرض = 1)" id="classNumberInput">
             </div>
         </div>
         <hr class="hr-xs">
@@ -49,7 +49,7 @@
     $('#startButton').click(function () {
         let classNumber = $("#classNumberInput").val();
         if (isNaN(classNumber) || classNumber == undefined || classNumber == '') {
-            classNumber = 0;
+            classNumber = 1;
         }
         if (isDetecting) {
             isDetecting = false;

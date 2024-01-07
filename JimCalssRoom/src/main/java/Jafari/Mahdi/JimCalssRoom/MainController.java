@@ -18,7 +18,7 @@ public class MainController {
     @ResponseBody
     public boolean manageDetection(@PathVariable int classNumber, @PathVariable boolean saveStatus, @PathVariable boolean detectionStatus) {
         MotionDetector.saveImages = saveStatus;
-        MotionDetector.cameraNumber = classNumber;
+        MotionDetector.classNumber = classNumber;
         if (detectionStatus) {
             MotionDetector.continueDetection = true;
             thread = new Thread(() -> new MotionDetector());
