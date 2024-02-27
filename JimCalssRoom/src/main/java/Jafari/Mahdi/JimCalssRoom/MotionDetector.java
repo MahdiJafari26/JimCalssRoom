@@ -77,7 +77,7 @@ public class MotionDetector {
                     }
 
                     System.out.println("Motion detected!!!");
-sendStatus();
+                    sendStatus();
                     if (saveImages)
                         saveFrame(frame);
                     noMotionDetected = false;

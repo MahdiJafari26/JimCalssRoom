@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc6b4fa9-f7c4-4e94-b549-2d298d004fd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JimCalssRoom/src/main/java/Jafari/Mahdi/JimCalssRoom/MotionDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JimCalssRoom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JimCalssRoom.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JimCalssRoom/src/main/java/Jafari/Mahdi/JimCalssRoom/MotionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/JimCalssRoom/src/main/java/Jafari/Mahdi/JimCalssRoom/MotionDetector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +15,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,6 +53,22 @@
     <property name="project.structure.side.proportion" value="0.53103447" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="RunManager" selected="Spring Boot.JimCalssRoomApplication">
+    <configuration name="JimAcademyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="JimAcademy" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Jafari.Mahdi.JimAcademy.JimAcademyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JimCalssRoomApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="JimCalssRoom" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="Jafari.Mahdi.JimCalssRoom.JimCalssRoomApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +80,8 @@
       <workItem from="1703957605504" duration="332000" />
       <workItem from="1703957970323" duration="203000" />
       <workItem from="1704021085752" duration="16000" />
+      <workItem from="1707640775557" duration="102000" />
+      <workItem from="1707678866146" duration="81000" />
     </task>
     <servers />
   </component>
